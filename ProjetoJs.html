@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    
+    <title>Dev Club - Conversor de Moedas</title>
+
+</head>
+
+<body>
+    <img id="gifLogo"  src="/Assets/logo.gif" alt="Logo-Conversor-DevClub">
+
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select>
+                <option>R$ - Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="moeda-select">
+                <option value="dolar">U$ - Dólar</option>
+                <option value="euro">€ - Euro</option>
+                <option value="libra">£ - Libra</option>
+                <option value="bitcoin">₿ - Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-moeda" type="number"  placeholder="R$ 00,00">
+        </label>
+
+        <button class="botao-converter">Converter</button>
+   
+        <section>
+            <div class="caixaMoeda">
+                <img src="/Assets/brasil 2.png" alt="Logo-moeda-a-converter">
+                <p class="moeda">Real</p>
+                <p class="valorMoeda" id="real-valor">R$ 00,00</p>
+            </div>
+
+            <img src="/Assets/Seta.png" class="seta">
+
+            <div class="caixaMoeda">
+                <img  class="imagem-moeda" src="/Assets/dolar.png" alt="Logo-moeda-convertida">
+                <p class="moeda" id="moeda-nome">Dólar</p>
+                <p class="valorMoeda" id="moeda-convertida">U$ 00,00</p>
+            </div>
+
+        </section>
+    </main>
+
+
+
+</body>
+<script src="/script.js"></script>
+
+</html>
